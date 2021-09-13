@@ -1,0 +1,94 @@
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+
+p {
+	color: darkred;
+}
+p {
+	color: darkseagreen;
+}
+span {
+	color: deeppink;
+}
+.text {
+	color: dodgerblue;
+}
+.title {
+	color: gold;
+}
+.title-red {
+	color: red;
+}
+#person {
+	color: greenyellow;
+}
+
+#bio {
+	color: wheat;
+}
+.biography {
+	color: black;
+}
+h3.title.title-red {
+	color: turquoise;
+}
+
+div p {
+	color: black;
+}
+.content .content__text {
+	color: cyan;
+}
+* {
+	color: magenta;
+}
+.biography p,
+.content h3 {
+	color: mediumseagreen;
+}
+.content .content__text,
+.content .content__item {
+	color: red;
+}
+.content_text,
+.text,
+footer {
+	color: orangered;
+}
+.content > span {
+	color: peru;
+}
+.title + * {
+	color: whitesmoke;
+}
+.title ~ span {
+	color: darkviolet;
+}
