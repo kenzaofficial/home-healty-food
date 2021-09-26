@@ -13,6 +13,7 @@ h1 {
 	letter-spacing: 10px;
 	text-align: center;
 	text-transform: uppercase;
+	text-shadow: 1px 1px 10px #9b0101fa;
 }
 
 .navigation {
@@ -20,6 +21,7 @@ h1 {
 	margin: 0 auto 30px;
 	max-width: 1200px;
 }
+
 .navigation__list {
 	margin: 0 auto;
 	max-width: 90%;
@@ -33,6 +35,7 @@ h1 {
 	font-size: 18px;
 	text-align: center;
 }
+
 .navigation__item:last-child {
 	margin: 0;
 }
@@ -41,13 +44,13 @@ h1 {
 	display: inline-block;
 	font-family: "Russo One", sans-serif;
 	text-transform: uppercase;
-	line-height: 150%;
-	outline: 3px solid #ff0000;
+	line-height: 200%;
 }
 
 .navigation__link img {
 	display: block;
-	outline: 3px solid #a851f0;
+	outline: 1px solid #a851f0;
+	box-shadow: 1px 1px 10px 3px #4d08f0fd;
 	border-radius: 50%;
 }
 /*МЕЙН КОНТЕНТ---------------------------*/
@@ -55,6 +58,7 @@ h1 {
 	font-size: 24px;
 	text-align: center;
 	text-transform: uppercase;
+	box-shadow: inset 1px 1px 5px 10px darkmagenta;
 }
 
 .content__sub-title {
@@ -77,7 +81,7 @@ h1 {
 	display: inline;
 	font-size: 32px;
 	color: #ff0000;
-	border: 1px solid #000;
+	border: 2px solid #000;
 	opacity: 100;
 }
 
@@ -98,18 +102,26 @@ h1 {
 	max-width: 1200px;
 	margin: 0 auto 30px;
 }
+
 .gallery__img {
 	display: inline-block;
 	width: 50%;
 }
+
+.gallery__img img {
+	border-radius: 80px;
+	border-top-right-radius: 0;
+}
+
 .gallery__img-right {
 	text-align: right;
 }
+
 .footer {
 	margin-bottom: 30px;
 }
 
-footer a {
+.footer__link {
 	visibility: hidden;
 }
 
@@ -125,10 +137,12 @@ footer a {
 	border-right: 10px dashed #00ffff;
 	border-bottom: 5px double #000;
 }
+
 .task__block {
 	margin-bottom: 30px;
 	border: 1px solid #000;
 }
+
 .task__one {
 	display: block;
 }
@@ -150,6 +164,7 @@ footer a {
 	vertical-align: middle;
 	color: #f57070;
 	background-color: #213;
+	border-radius: 15px 20px;
 }
 
 .task__three {
@@ -157,7 +172,7 @@ footer a {
 	margin-bottom: 30px;
 	color: #fff;
 	background-color: #ff0000;
-	box-shadow: 2px 3px 5px 10px #213;
+	box-shadow: 2px 3px 5px 10px #213, -3px -4px 5px 10px #fff;
 }
 
 .task__four {
@@ -168,6 +183,9 @@ footer a {
 	font-size: 16px;
 	vertical-align: top;
 	background-color: #a851f0;
+	border-top-left-radius: 25%;
+	border-bottom-right-radius: 75%;
+	overflow: hidden;
 }
 
 .task__five {
