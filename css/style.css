@@ -1,111 +1,197 @@
-/*Верно ли мое предположение, что cyrillic extended нужно использовать в случае с украинским или другими языками где содержатся дополнительные символы?*/
-@import url("https://fonts.googleapis.com/css?family=Rubik+Beastly:regular&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
-@font-face {
-	font-family: "SF UI Text";
-	src: url("../fonts/SFUIText-Regular.woff2") format("woff2"), url("../fonts/SFUIText-Regular.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
 
-@font-face {
-	font-family: "SF UI Text";
-	src: url("../fonts/SFUIText-Bold.woff2") format("woff2"), url("../fonts/SFUIText-Bold.woff") format("woff");
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "SF UI Text";
-	src: url("../fonts/SFUIText-Italic.woff2") format("woff2"), url("../fonts/SFUIText-Italic.woff") format("woff");
-	font-weight: normal;
-	font-style: italic;
-	font-display: swap;
-}
-
-header p span {
-	font-weight: 400;
-	text-decoration: line-through;
+.wrapper {
+	background-color: #edfc67;
 }
 
 h1 {
-	font-family: "Rubik Beastly";
-	font-size: 48px;
-	line-height: 150%;
-	font-weight: 400;
-	word-spacing: 20px;
-	letter-spacing: 5px;
+	padding: 20px;
+	margin-bottom: 30px;
+	font-family: "Amatic SC", cursive;
+	font-size: 70px;
+	font-weight: 700;
+	letter-spacing: 10px;
 	text-align: center;
 	text-transform: uppercase;
-	color: #c72626;
-	text-shadow: 1px 2px 7px #000;
-}
-
-.img-right {
-	text-align: right;
-}
-
-.img-center {
-	text-align: center;
-}
-
-header .img + p {
-	text-align: right;
-}
-
-nav p {
-	font-size: 40px;
-	line-height: 200%;
-	text-decoration: underline;
 }
 
 .navigation {
-	font-family: "Russo One", sans-serif;
-	font-size: 20px;
-	font-weight: 400;
-	line-height: 120%;
+	padding: 20px 10px;
+	margin: 0 auto 30px;
+	max-width: 1200px;
+}
+.navigation__list {
+	margin: 0 auto;
+	max-width: 90%;
+	font-size: 0;
+	text-align: center;
 }
 
-.navigation a {
-	font-weight: 700;
-	color: #cf0101;
-	text-transform: uppercase;
+.navigation__item {
+	display: inline-block;
+	margin: 0 15px 0 0;
+	font-size: 18px;
+	text-align: center;
 }
-.title {
-	font-family: "SF UI Text", sans-serif;
-	font-size: 30px;
-	font-weight: 700;
+.navigation__item:last-child {
+	margin: 0;
+}
+
+.navigation__link {
+	display: inline-block;
+	font-family: "Russo One", sans-serif;
+	text-transform: uppercase;
+	line-height: 150%;
+	outline: 3px solid #ff0000;
+}
+
+.navigation__link img {
+	display: block;
+	outline: 3px solid #a851f0;
+	border-radius: 50%;
+}
+/*МЕЙН КОНТЕНТ---------------------------*/
+.sub-title {
+	font-size: 24px;
 	text-align: center;
 	text-transform: uppercase;
 }
-.sub-title {
-	font-family: "SF UI Text", sans-serif;
-	font-weight: 400;
-	font-style: italic;
-	text-align: left;
+
+.content__sub-title {
+	margin: 0 0 10px 0;
 }
 
 .text {
-	text-indent: 20px;
+	display: block;
+	min-width: 320px;
+	background-color: #5a80fcfb;
+	opacity: 50%;
 }
-#myth + p {
-	text-align: justify;
+
+.content__text {
+	margin-bottom: 40px;
 }
-.no-wrap-text {
-	text-transform: capitalize;
-	white-space: nowrap;
+
+.inline-div {
+	margin: 20px;
+	display: inline;
+	font-size: 32px;
+	color: #ff0000;
+	border: 1px solid #000;
+	opacity: 100;
 }
+
+.content__text-yellow {
+	display: inline;
+	padding-left: 20px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 1px;
+	margin-bottom: 422222220px;
+	line-height: 200%;
+	color: #f3ef00;
+	opacity: 100;
+}
+
 .gallery {
-	/*------------------------это уже любопытно*/
-	word-spacing: 170px;
-	text-align: center;
+	font-size: 0;
+	max-width: 1200px;
+	margin: 0 auto 30px;
 }
-footer {
-	text-align: center;
+.gallery__img {
+	display: inline-block;
+	width: 50%;
 }
-.footer__text {
-	font-style: oblique;
+.gallery__img-right {
 	text-align: right;
+}
+.footer {
+	margin-bottom: 30px;
+}
+
+footer a {
+	visibility: hidden;
+}
+
+/*Дополнительное задание урока 5 ------------------------*/
+
+.task__sub-title {
+	margin: 0 0 50px 0;
+}
+
+.task__sub-title + .task__block {
+	border-left: 9px solid #862;
+	border-top: 2px dotted #ff0000;
+	border-right: 10px dashed #00ffff;
+	border-bottom: 5px double #000;
+}
+.task__block {
+	margin-bottom: 30px;
+	border: 1px solid #000;
+}
+.task__one {
+	display: block;
+}
+
+.task-wrapper {
+	font-size: 0;
+}
+
+.task-wrapper-opacity {
+	opacity: 50%;
+}
+
+.task__two {
+	display: inline-block;
+	padding: 15px;
+	max-width: 200px;
+	max-height: 200px;
+	font-size: 16px;
+	vertical-align: middle;
+	color: #f57070;
+	background-color: #213;
+}
+
+.task__three {
+	display: inline-block;
+	margin-bottom: 30px;
+	color: #fff;
+	background-color: #ff0000;
+	box-shadow: 2px 3px 5px 10px #213;
+}
+
+.task__four {
+	display: inline-block;
+	max-width: 100px;
+	margin-right: 30px;
+	padding: 10px;
+	font-size: 16px;
+	vertical-align: top;
+	background-color: #a851f0;
+}
+
+.task__five {
+	padding: 30px;
+	width: 200px;
+	height: 200px;
+	color: #5a80fcfb;
+	background-color: #492a2a;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.task__five-overflowed {
+	margin-top: -30px;
+	background-color: #00ffff;
+}
+
+.task__six {
+	display: block;
+	max-height: 200px;
+	background-color: #ff0000;
+	overflow: auto;
+}
+
+.span {
+	border: 1px solid #000;
 }
