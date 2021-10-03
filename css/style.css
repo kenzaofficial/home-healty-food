@@ -1,215 +1,201 @@
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 
-.wrapper {
-	background-color: #edfc67;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
 
-h1 {
-	padding: 20px;
-	margin-bottom: 30px;
-	font-family: "Amatic SC", cursive;
-	font-size: 70px;
-	font-weight: 700;
-	letter-spacing: 10px;
+.header {
+	margin-bottom: 50px;
+	padding: 30px;
+	font-size: 50px;
 	text-align: center;
 	text-transform: uppercase;
-	text-shadow: 1px 1px 10px #9b0101fa;
-}
-
-.navigation {
-	padding: 20px 10px;
-	margin: 0 auto 30px;
-	max-width: 1200px;
-}
-
-.navigation__list {
-	margin: 0 auto;
-	max-width: 90%;
-	font-size: 0;
-	text-align: center;
-}
-
-.navigation__item {
-	display: inline-block;
-	margin: 0 15px 0 0;
-	font-size: 18px;
-	text-align: center;
-}
-
-.navigation__item:last-child {
-	margin: 0;
-}
-
-.navigation__link {
-	display: inline-block;
-	font-family: "Russo One", sans-serif;
-	text-transform: uppercase;
-	line-height: 200%;
-}
-
-.navigation__link img {
-	display: block;
-	outline: 1px solid #a851f0;
-	box-shadow: 1px 1px 10px 3px #4d08f0fd;
-	border-radius: 50%;
-}
-/*МЕЙН КОНТЕНТ---------------------------*/
-.sub-title {
-	font-size: 24px;
-	text-align: center;
-	text-transform: uppercase;
-	box-shadow: inset 1px 1px 5px 10px darkmagenta;
-}
-
-.content__sub-title {
-	margin: 0 0 10px 0;
-}
-
-.text {
-	display: block;
-	min-width: 320px;
-	background-color: #5a80fcfb;
-	opacity: 50%;
-}
-
-.content__text {
-	margin-bottom: 40px;
-}
-
-.inline-div {
-	margin: 20px;
-	display: inline;
-	font-size: 32px;
-	color: #ff0000;
-	border: 2px solid #000;
-	opacity: 100;
-}
-
-.content__text-yellow {
-	display: inline;
-	padding-left: 20px;
-	padding-right: 30px;
-	padding-top: 10px;
-	padding-bottom: 1px;
-	margin-bottom: 422222220px;
-	line-height: 200%;
-	color: #f3ef00;
-	opacity: 100;
-}
-
-.gallery {
-	font-size: 0;
-	max-width: 1200px;
-	margin: 0 auto 30px;
-}
-
-.gallery__img {
-	display: inline-block;
-	width: 50%;
-}
-
-.gallery__img img {
-	border-radius: 80px;
-	border-top-right-radius: 0;
-}
-
-.gallery__img-right {
-	text-align: right;
+	background-color: #fffb00;
 }
 
 .footer {
-	margin-bottom: 30px;
-}
-
-.footer__link {
-	visibility: hidden;
-}
-
-/*Дополнительное задание урока 5 ------------------------*/
-
-.task__sub-title {
-	margin: 0 0 50px 0;
-}
-
-.task__sub-title + .task__block {
-	border-left: 9px solid #862;
-	border-top: 2px dotted #ff0000;
-	border-right: 10px dashed #00ffff;
-	border-bottom: 5px double #000;
-}
-
-.task__block {
-	margin-bottom: 30px;
-	border: 1px solid #000;
-}
-
-.task__one {
-	display: block;
-}
-
-.task-wrapper {
-	font-size: 0;
-}
-
-.task-wrapper-opacity {
-	opacity: 50%;
-}
-
-.task__two {
-	display: inline-block;
-	padding: 15px;
-	max-width: 200px;
-	max-height: 200px;
-	font-size: 16px;
-	vertical-align: middle;
-	color: #f57070;
-	background-color: #213;
-	border-radius: 15px 20px;
-}
-
-.task__three {
-	display: inline-block;
-	margin-bottom: 30px;
-	color: #fff;
-	background-color: #ff0000;
-	box-shadow: 2px 3px 5px 10px #213, -3px -4px 5px 10px #fff;
-}
-
-.task__four {
-	display: inline-block;
-	max-width: 100px;
-	margin-right: 30px;
-	padding: 10px;
-	font-size: 16px;
-	vertical-align: top;
-	background-color: #a851f0;
-	border-top-left-radius: 25%;
-	border-bottom-right-radius: 75%;
-	overflow: hidden;
-}
-
-.task__five {
 	padding: 30px;
-	width: 200px;
-	height: 200px;
-	color: #5a80fcfb;
-	background-color: #492a2a;
-	border-radius: 50%;
-	overflow: hidden;
+	font-size: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #fffb00;
+}
+/*Задание по макету  Car Repair*/
+.main-car {
+	margin-bottom: 50px;
+	padding-bottom: 120px;
+	/*Повторил шрифт для правильности хотя он был задан в боди*/
+	font-family: Roboto, sans-serif;
 }
 
-.task__five-overflowed {
-	margin-top: -30px;
-	background-color: #00ffff;
+/*ABOUT--------------------------------*/
+.about {
+	margin: 0 auto 230px;
+	padding: 100px 87px 0;
+	max-width: 1020px;
+	background-color: #fff;
 }
 
-.task__six {
+/*Универсальный блок */
+.overline {
+	margin-bottom: 33px;
+}
+
+.overline__text {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 200%;
+	letter-spacing: 2.5px;
+	vertical-align: sub;
+	text-transform: uppercase;
+}
+
+/*Универсальный блок */
+.title {
+	/*марджин для переноса текста вместо бр*/
+	margin-right: 150px;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 115%;
+	color: #02133c;
+}
+
+.about__title {
+	margin-bottom: 35px;
+}
+
+/*Универсальный блок */
+.text {
+	line-height: 150%;
+	letter-spacing: 0.15px;
+}
+
+.about__text {
+	margin-bottom: 55px;
+}
+
+.about__img {
+	max-width: 100%;
+	margin-bottom: -120px;
+}
+
+/*SERVICES----------------------------------*/
+
+.services {
+	max-width: 1020px;
+	margin: 0 auto;
+}
+
+.services__title {
+	margin-bottom: 80px;
+}
+
+.card {
 	display: block;
-	max-height: 200px;
-	background-color: #ff0000;
-	overflow: auto;
+	color: inherit;
 }
 
-.span {
-	border: 1px solid #000;
+.services__card {
+	margin-bottom: 25px;
+	padding: 50px 45px;
+	max-width: 325px;
+	text-align: center;
+	background-color: #fff;
+}
+
+/*Видел на уроке, пробую*/
+.services__card:hover {
+	box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.24), 0px 16px 24px rgba(38, 38, 38, 0.2);
+}
+
+.card__icon {
+	margin-bottom: 33px;
+}
+
+.card__title {
+	margin-bottom: 20px;
+	font-size: 19px;
+	font-weight: 900;
+	line-height: 135%;
+}
+
+/*Задание по макету  Tech Online Store Design*/
+
+.main-tech {
+	padding: 50px 0 0 0;
+	font-family: Poppins, sans-serif;
+	font-weight: 300;
+	color: #000;
+	background-color: #fff;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1020px;
+}
+
+.conditions {
+	margin-bottom: 50px;
+}
+
+.conditions__title {
+	margin-bottom: 25px;
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 150%;
+}
+
+.conditions__secondary-title {
+	margin-bottom: 110px;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 150%;
+	text-transform: uppercase;
+}
+
+.conditions__sub-title {
+	margin-bottom: 25px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 162%;
+}
+
+.conditions__text {
+	margin-bottom: 25px;
+	line-height: 162%;
+}
+
+.conditions__list {
+	margin-bottom: 25px;
+}
+
+.conditions-list__item {
+	line-height: 163%;
+}
+
+/*products-------------------*/
+
+.products {
+	padding: 130px 45px;
+	max-width: 550px;
+	margin-bottom: 50px;
+}
+
+.products__overtitle-icon {
+	margin-bottom: 10px;
+	border: 14px solid #0156ff;
+	background-color: #0156ff;
+	border-radius: 50%;
+	border-bottom-left-radius: 0;
+}
+
+.products__title {
+	margin-bottom: 25px;
+	font-size: 44px;
+	font-weight: 500;
+	line-height: 132%;
+}
+
+.products__text {
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 150%;
 }
