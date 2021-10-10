@@ -136,10 +136,10 @@
 
 .hero {
 	margin-bottom: 30px;
-	padding-top: 280px;
+	/*это ли не странно задавать такие падинги чтобы вывести высоту?*/
+	padding: 280px 0 335px 0;
 	max-width: 1440px;
-	min-height: 800px;
-	background: url(../img/hero_bg.png);
+	background: url(../img/hero_bg.png) center / cover no-repeat;
 }
 
 .container {
