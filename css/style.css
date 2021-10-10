@@ -1,14 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
-
 .header {
 	margin-bottom: 50px;
 	padding: 30px;
 	font-size: 50px;
 	text-align: center;
 	text-transform: uppercase;
-	background-color: #fffb00;
+	background-color: #71ac85;
 }
 
 .footer {
@@ -16,186 +14,263 @@
 	font-size: 50px;
 	text-align: center;
 	text-transform: uppercase;
-	background-color: #fffb00;
-}
-/*Задание по макету  Car Repair*/
-.main-car {
-	margin-bottom: 50px;
-	/*Повторил шрифт для правильности хотя он был задан в боди*/
-	font-family: Roboto, sans-serif;
+	background-color: #71ac85;
 }
 
-/*ABOUT--------------------------------*/
-.about {
-	margin: 0 auto 230px;
-	padding: 100px 87px 0;
+.main {
+	padding: 0 10px;
+}
+
+.block {
+	margin-bottom: 30px;
+	padding: 20px;
 	max-width: 1020px;
-	background-color: #fff;
+	min-height: 300px;
+	font-size: 60px;
+	word-wrap: break-word;
+	color: rgb(255, 208, 0);
+	border: 2px solid #000;
 }
 
-/*Универсальный блок */
-.overline {
-	margin-bottom: 33px;
+.block__1 {
+	background: #512235;
 }
 
-.overline__text {
+.block__2 {
+	padding: 50px;
+	max-height: 300px;
+	overflow: auto;
+	background: url(../img/meal_01.png) fixed #71ac85;
+}
+
+.block__3 {
+	background: linear-gradient(108deg, #c40b0b 75%, #e30b0b 75%);
+}
+
+.block__4 {
+	background: url(../img/meal_01.png) 100% 50% / 50px 100px no-repeat #eeff00;
+}
+
+.block__5 {
+	background: url(../img/meal_01.png) center bottom / auto 100px no-repeat #4b4b4b;
+}
+
+.block__6 {
+	background: url(../img/meal_01.png) 30% top / 100px auto no-repeat #512235;
+}
+
+.block__7 {
+	background: url(../img/meal_01.png) -250px 70px / cover no-repeat #fcff5c;
+}
+
+.block__8 {
+	padding: 50px;
+	max-height: 200px;
+	overflow: auto;
+	background: url(../img/meal_01.png) 100% 50% / cover local no-repeat #71ac85;
+}
+
+.block__9 {
+	padding: 50px;
+	background: url(../img/meal_01.png) 50% / contain no-repeat #c40b0b;
+}
+
+.list {
+	padding: 30px;
+}
+
+.list__item {
+	margin-bottom: 5px;
+	padding-right: 30px;
+	line-height: 27px;
+	background: url(../img/icon.png) top right no-repeat;
+}
+
+/*contacts-----------------------*/
+
+.contacts {
+	margin-bottom: 30px;
+	padding: 10px;
+	max-width: 240px;
+	font-size: 14px;
+	letter-spacing: 0.15px;
+	color: #4b4b4b;
+	/*фон для наглядности*/
+	background-color: #fcff5c;
+	border-radius: 5px;
+}
+
+.contacts__title {
+	margin-bottom: 25px;
 	font-weight: 700;
-	font-size: 12px;
-	line-height: 200%;
-	letter-spacing: 2.5px;
-	vertical-align: sub;
+	line-height: 157%;
 	text-transform: uppercase;
 }
 
-/*Универсальный блок */
-.title {
-	/*марджин для переноса текста вместо бр*/
-	margin-right: 150px;
-	font-weight: 900;
-	font-size: 36px;
-	line-height: 115%;
-	color: #02133c;
-}
-
-.about__title {
-	margin-bottom: 35px;
-}
-
-/*Универсальный блок */
-.text {
-	line-height: 150%;
+.contacts__item {
+	margin-bottom: 15px;
+	padding-left: 30px;
+	line-height: 133%;
 	letter-spacing: 0.15px;
+	background: top left no-repeat;
 }
 
-.about__text {
-	margin-bottom: 55px;
+.contacts__address {
+	background-image: url(../img/contacts_01.png);
 }
 
-.about__img {
-	max-width: 100%;
-	margin-bottom: -120px;
+.contacts__tel {
+	background-image: url(../img/contacts_02.png);
 }
 
-/*SERVICES----------------------------------*/
-
-.services {
-	max-width: 1020px;
-	margin: 0 auto;
+.contacts__email {
+	background-image: url(../img/contacts_03.png);
+	background-position: center left;
 }
 
-.services__title {
-	margin-bottom: 80px;
+.contacts__schedule {
+	background-image: url(../img/contacts_04.png);
 }
 
-.card-link {
-	display: block;
-	color: inherit;
-}
+/*hero----------------------------------------*/
 
-.services__card-link {
-	margin-bottom: 25px;
-	padding: 50px 45px;
-	max-width: 325px;
-	text-align: center;
-	background-color: #fff;
-}
-
-/*Видел на уроке, пробую*/
-.services__card-link:hover {
-	box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.24), 0px 16px 24px rgba(38, 38, 38, 0.2);
-}
-
-.card-link__icon {
-	margin-bottom: 33px;
-}
-
-.card-link__title {
-	margin-bottom: 20px;
-	font-size: 19px;
-	font-weight: 900;
-	line-height: 135%;
-}
-
-/*Задание по макету  Tech Online Store Design*/
-
-.main-tech {
-	padding: 50px 0 0 0;
-	font-family: Poppins, sans-serif;
-	font-weight: 300;
-	color: #000;
-	background-color: #fff;
+.hero {
+	margin-bottom: 30px;
+	padding-top: 280px;
+	max-width: 1440px;
+	min-height: 800px;
+	background: url(../img/hero_bg.png);
 }
 
 .container {
 	margin: 0 auto;
-	padding: 0 10px;
 	max-width: 1020px;
 }
 
-.conditions {
-	margin-bottom: 50px;
+.hero__content {
+	max-width: 585px;
 }
 
-.conditions__title {
-	margin-bottom: 25px;
-	font-size: 32px;
-	font-weight: 600;
-	line-height: 150%;
+.hero__title {
+	margin-bottom: 48px;
+	font-size: 56px;
+	font-weight: 900;
+	line-height: 56px;
+	letter-spacing: 0px;
+	color: #fff;
 }
 
-.conditions__secondary-title {
-	margin-bottom: 50px;
-	font-size: 24px;
-	font-weight: 600;
-	line-height: 150%;
+.hero__button {
+	padding: 17px 10px 17px 15px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 200%;
+	letter-spacing: 0.15px;
 	text-transform: uppercase;
+	color: #fff;
+	background: linear-gradient(108deg, #c40b0b 80%, #e30b0b 80%);
 }
 
-.conditions__sub-title {
-	margin-bottom: 25px;
+.hero__button:hover {
+	color: #000;
+	background: linear-gradient(108deg, #eeff00 80%, #fffd85 80%);
+}
+
+.hero__button span {
+	margin-left: 32px;
+}
+
+/*stats-----------------------------------*/
+
+.stats {
+	margin-bottom: 30px;
+	font-size: 0;
+	background: url(../img/bg_stats.png) #02133c;
+}
+
+.stats__container {
+	padding-bottom: 75px;
+}
+
+.stats__titles {
+	display: inline-block;
+	margin-right: 105px;
+	padding-top: 110px;
+	margin-bottom: 80px;
+	max-width: 415px;
+}
+
+.stats__overtitle {
+	margin-bottom: 30px;
+	padding-left: 30px;
+	font-family: Roboto;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 200%;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: #d5d5d5;
+	background: url(../img/icon.png) center left no-repeat;
+}
+
+.stats__title {
+	font-size: 36px;
+	font-weight: 900;
+	line-height: 116.6%;
+	letter-spacing: 0px;
+	color: #fff;
+}
+
+.stats__img {
+	vertical-align: top;
+	margin-top: -80px;
+}
+
+.stats__list {
+	margin-bottom: 135px;
+}
+
+.stats__item {
+	display: inline-block;
+	padding: 0 25px 10px 105px;
+	width: 25%;
+	vertical-align: top;
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+.stats__01 {
+	background-image: url(../img/item_01.png);
+}
+
+.stats__02 {
+	background-image: url(../img/item_02.png);
+}
+
+.stats__03 {
+	background-image: url(../img/item_03.png);
+}
+
+.stats__04 {
+	background-image: url(../img/item_04.png);
+}
+
+.stats__value {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 36px;
+	font-weight: 900;
+	line-height: 116%;
+	letter-spacing: 0px;
+	color: #c40b0b;
+}
+
+.stats__item-title {
 	font-size: 16px;
-	font-weight: 600;
-	line-height: 162%;
-}
-
-.conditions__text {
-	margin-bottom: 25px;
-	line-height: 162%;
-}
-
-.conditions__list {
-	margin-bottom: 25px;
-}
-
-.conditions-list__item {
-	line-height: 163%;
-}
-
-/*products-------------------*/
-
-.products {
-	padding: 30px 0;
-	max-width: 550px;
-	margin-bottom: 50px;
-}
-
-.products__overtitle-icon {
-	margin-bottom: 10px;
-	border: 14px solid #0156ff;
-	background-color: #0156ff;
-	border-radius: 50%;
-	border-bottom-left-radius: 0;
-}
-
-.products__title {
-	margin-bottom: 25px;
-	font-size: 44px;
-	font-weight: 500;
-	line-height: 132%;
-}
-
-.products__text {
-	font-size: 18px;
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 150%;
+	letter-spacing: 0.15px;
+	text-align: left;
+	word-wrap: break-word;
+	color: #f5f5f5;
 }
