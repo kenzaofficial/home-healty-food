@@ -109,10 +109,6 @@ body {
   max-width: 1140px;
 }
 
-[class*=__ibg] {
-  position: relative;
-}
-
 [class*=__ibg] img {
   position: absolute;
   -o-object-position: center;
@@ -832,12 +828,6 @@ body {
   min-width: 290px;
 }
 
-.dishes__item:last-child {
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-}
-
 @media (max-width: 911.5px) {
   .dishes__item {
     padding: 0 7.5px;
@@ -1045,7 +1035,7 @@ body {
 .item-dishes .rating__label:hover,
 .item-dishes .rating__label:hover ~ .rating__label,
 .item-dishes .rating__label:hover:checked ~ .rating__label:hover {
-  color: green;
+  color: yellow;
 }
 
 .footer {

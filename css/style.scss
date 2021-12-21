@@ -407,9 +407,6 @@
     padding: 0 15px;
     flex: 1 1 33.333333%;
     min-width: 290px;
-    &:last-child {
-      flex-grow: 0;
-    }
     @media (max-width: 911.5px) {
       padding: 0 7.5px;
     }
@@ -571,7 +568,7 @@
       &:hover,
       &:hover ~ .rating__label,
       &:hover:checked ~ .rating__label:hover {
-        color: green;
+        color: yellow;
       }
     }
   }
