@@ -3,8 +3,10 @@
 }
 
 .burger-menu__btn {
-  display: flex; /* используем flex для центрирования содержимого */
-  align-items: center; /* центрируем содержимое кнопки */
+  display: flex;
+  /* используем flex для центрирования содержимого */
+  align-items: center;
+  /* центрируем содержимое кнопки */
   position: fixed;
   top: 30px;
   right: 20px;
@@ -12,24 +14,28 @@
   height: 26px;
   cursor: pointer;
   z-index: 5;
+
   @media (max-width: 767.5px) {
     top: 15px;
   }
 }
-.burger-menu__btn > span,
-.burger-menu__btn > span::before,
-.burger-menu__btn > span::after {
+
+.burger-menu__btn>span,
+.burger-menu__btn>span::before,
+.burger-menu__btn>span::after {
   display: block;
   position: absolute;
   width: 100%;
   height: 3px;
   background-color: #34c759;
 }
-.burger-menu__btn > span::before {
+
+.burger-menu__btn>span::before {
   content: "";
   top: -11px;
 }
-.burger-menu__btn > span::after {
+
+.burger-menu__btn>span::after {
   content: "";
   top: 11px;
 }
@@ -48,7 +54,7 @@
   position: fixed;
   visibility: hidden;
   top: 0;
-  left: -100%;
+  right: -100%;
   width: 100%;
   height: 100%;
   padding: 80px 0;
@@ -56,6 +62,7 @@
   background-color: #513;
   z-index: 2;
 }
+
 .burger-menu__list::before {
   content: "";
   position: absolute;
@@ -69,45 +76,51 @@
 /* элементы меню */
 .burger-menu__item {
   display: block;
-  padding: 25px;
+  padding: 10px;
   font-size: 24px;
   font-weight: 600;
   letter-spacing: 2.5px;
   color: #fff;
 }
+
 .burger-menu__item:hover {
   background-color: #df4646;
 }
 
-#menu__toggle:checked ~ .burger-menu__btn > span {
+#menu__toggle:checked~.burger-menu__btn>span {
   transform: rotate(45deg);
 }
-#menu__toggle:checked ~ .burger-menu__btn > span::before {
+
+#menu__toggle:checked~.burger-menu__btn>span::before {
   top: 0;
   transform: rotate(0);
 }
-#menu__toggle:checked ~ .burger-menu__btn > span::after {
+
+#menu__toggle:checked~.burger-menu__btn>span::after {
   top: 0;
   transform: rotate(90deg);
 }
-#menu__toggle:checked ~ .burger-menu__list {
+
+#menu__toggle:checked~.burger-menu__list {
   visibility: visible;
-  left: 0;
+  right: 0;
 }
 
-#menu__toggle:checked ~ .burger-menu__list > li > .burger-header__contacts {
+#menu__toggle:checked~.burger-menu__list>li>.burger-header__contacts {
   display: block;
   background: yellow;
 }
 
-.burger-menu__btn > span,
-.burger-menu__btn > span::before,
-.burger-menu__btn > span::after {
+.burger-menu__btn>span,
+.burger-menu__btn>span::before,
+.burger-menu__btn>span::after {
   transition-duration: 0.25s;
 }
+
 .burger-menu__list {
   transition-duration: 0.25s;
 }
+
 .burger-menu__item {
   transition-duration: 0.25s;
 }
